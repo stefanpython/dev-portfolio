@@ -64,7 +64,7 @@ export default function Contact() {
       .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        // @ts-ignore
+        // @ts-expect-error EmailJS
         formData,
         import.meta.env.VITE_EMAILJS_USER_ID
       )
